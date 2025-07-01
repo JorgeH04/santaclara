@@ -25,6 +25,8 @@
 /* small mobile :320px. */
 /* Large Mobile :480px. */
 /* line 6, ../../Arafath/CL/Cl November/225. Restaurant-02/HTML/scss/theme-default.scss */
+
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -6693,3 +6695,18 @@ h6 {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+@media (max-width: 767px) {
+  .boxed-btn3 {
+    display: block;
+    margin: 10px auto; /* Reduce el espacio entre los botones */
+    width: 200px;       /* Ancho fijo, podés ajustarlo si querés */
+  }
+
+  .single_slider {
+    height: 600px !important;
+    background-size: cover;
+    background-position: center center;
+  }
+}
