@@ -1,341 +1,77 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Santa Clara</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Selector</title>
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <!-- Fuente elegante desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/slicknav.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    .language-selector {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin-bottom: 5px;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
+
+    .flag {
+      margin: 15px 0;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .flag:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+  </style>
 </head>
-
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- header-start -->
-
-
-    <header>
-            <div class="header-area ">
-                <div id="sticky-header" class="main-header-area">
-                    <div class="container-fluid p-0">
-                        <div class="header_bottom_border">
-                            <div class="row align-items-center no-gutters">
-                                <div class="col-xl-3 col-lg-2">
-                                    <div class="logo">
-                                     
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-7">
-                                    <div class="main-menu  d-none d-lg-block">
-                                      
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-lg-3 d-none d-lg-block">
-                                    <div class="say_hello">
-    
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                        <a href="indexeng.html"><img src="img/flag.jpg"></a>    
-                                </div>
-
-                                <!-- <div class="col-12">
-                                    <div style="background-color: white; text-align: center; padding: 5px; width: 120px; text-align: left;">
-                                        <a href="indexeng.html" style="text-decoration: none; color: black; font-weight: bold;">Menu Inglés</a>
-                                    </div>
-                                </div> -->
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-        </header>
-    
-    <!-- header-end -->
-
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="slider_active owl-carousel">
-           
-         
-            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-xl-9 col-md-9 col-md-12">
-                            <div class="slider_text text-center">
-                                <h3 style="font-size:350%">Santa Clara</h3> 
-                                <p style="font-size: 114%;">Cafe Bar</p>
-                                <a href="indexeng.html" class="boxed-btn3">English Menu</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="language-selector">
+    <h1>Santa Clara</h1>
+    <h2>Seleccione el idioma / Select Language</h2>
+    <div class="flag" onclick="location.href='es/index.html'">
+        <a href="indexesp.html">
+        <img src="img/esp.png" alt="Español"> </a>
+      </div>
+    <div class="flag" onclick="location.href='en/index.html'">
+        <a href="indexeng.html">
+      <img src="img/uk.png" alt="English"></a>
     </div>
-    <!-- slider_area_end -->
-
-    <!-- about_area_start -->
    
-
-     <!--/ bradcam_area  -->
-
-     <div class="main_about_wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="row">
-
-                            <!-- menu desayuno -->
-                        <div class="col-xl-6 col-md-6">
-                            <div class="about_thumb">
-                                <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961775/1_pbmkpf.jpg" alt="">
-                            </div>
-                        </div>
-
-                        
-                    <!-- bizcochos de la ca-->
-                       <div class="col-xl-6 col-md-6">
-                            <div class="about_thumb">
-                                <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1748624787/esp_1_zyxsin.jpg" alt="">
-                            </div>
-                        </div>
-
-                        
-                            <!-- tostas epeciale-->
-                        <div class="col-xl-6 col-md-6">
-                                <div class="about_thumb">
-                                    <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961775/3_y4ww03.jpg" alt="">
-                                </div>
-                        </div>
-
-
-                       <!-- ensaladas -->
-                        <div class="col-xl-6 col-md-6">
-                                <div class="about_thumb">
-                                    <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961775/4_guxqdi.jpg" alt="">
-                                </div>
-                       </div>
-
-
-                        <!-- para picotear -->
-                       <div class="col-xl-6 col-md-6">
-                         <div class="about_thumb">
-                             <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961776/6_t4ixyr.jpg" alt="">
-                         </div>
-                      </div>
-
-
-                    <!-- bocatas -->
-                       <div class="col-xl-6 col-md-6">
-                            <div class="about_thumb">
-                                <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961775/5_eoivlb.jpg" alt="">
-                            </div>
-                        </div>
-
-
-
-
-                        <!-- hamburg especiales -->
-                        <div class="col-xl-6 col-md-6">
-                                <div class="about_thumb">
-                                    <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961776/8_in8oju.jpg" alt="">
-                                </div>
-                         </div>
-
-
-                       <!-- hamburg especiales continuacin -->
-                        <div class="col-xl-6 col-md-6">
-                            <div class="about_thumb">
-                                <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961776/9_mnkxmy.jpg" alt="">
-                            </div>
-                     </div>
-
-
-                       <!-- hamburguesas -->
-                       <div class="col-xl-6 col-md-6">
-                        <div class="about_thumb">
-                            <img src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1736961778/7_zfrvxt.jpg" alt="">
-                        </div>
-                    </div>
-
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- about_area_start -->
-    
-   
-
-    <!-- footer_start  -->
-    <footer class="footer">
-
-
-            <div class="footer_top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-3 col-md-6 col-lg-3 ">
-                                <div class="footer_widget">
-                                    <div class="footer_logo">
-                                        
-                                    </div>
-                                    <h3 class="footer_title">
-                                            Ubicación
-                                        </h3>
-                                    <p>Ronda de Monte Alto 2 <br> La Coruña, España <br>
-                                        <!-- <a href="#">+10 367 826 2567</a> <br>
-                                        <a href="#">contact@carpenter.com</a> -->
-                                    </p>
-                                    <p>
-        
-        
-        
-                                    </p>
-                                    <div class="socail_links">
-                                        <!-- <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="ti-twitter-alt"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-instagram"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-pinterest"></i>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-youtube-play"></i>
-                                                </a>
-                                            </li>
-                                        </ul> -->
-                                    </div>
-        
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6 col-lg-4 offset-xl-1">
-                                <div class="footer_widget">
-                                     
-                                    
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6 col-lg-4">
-                                <div class="footer_widget">
-                                    <h3 class="footer_title">
-                                     </h3>
-
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.7739227145394!2d-8.402857884511034!3d43.381750979131596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c741f98f8bb%3A0x1844651b4eb5f186!2sRda.%20de%20Monte%20Alto%2C%202%2C%2015002%20La%20Coru%C3%B1a%2C%20Espa%C3%B1a!5e0!3m2!1ses-419!2sar!4v1643812632724!5m2!1ses-419!2sar" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-       
-        <div class="copy-right_text">
-            <div class="container">
-                <div class="footer_border"></div>
-                <div class="row">
-                    <div class="col-xl-12">
-                        <p class="copy_right text-center">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Megadev</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- footer_end  -->
-
-    <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
-
-
-
-    <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-
-    <script src="js/main.js"></script>
-
-    <script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-                rightIcon: '<span class="fa fa-calendar-o"></span>'
-            }
-        });
-        $('#datepicker2').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-                rightIcon: '<span class="fa fa-calendar-o"></span>'
-            }
-
-        });
-    </script>
+  </div>
 </body>
-
 </html>
+
+
+
