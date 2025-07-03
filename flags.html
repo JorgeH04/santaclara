@@ -72,3 +72,83 @@
   </div>
 </body>
 </html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Language Selector</title>
+
+  <!-- Fuente elegante desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .language-selector {
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3em;
+      margin-bottom: 5px;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+      color: #cccccc;
+    }
+
+    .flag {
+      margin: 15px 0;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .flag:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <div class="language-selector">
+    <h1>Santa Clara</h1>
+    <h2>Cafe Bar </h2>
+    <div class="flag" onclick="location.href='es/index.html'">
+        <a href="indexesp.html">
+        <img src="img/images.png" alt="Español"> </a>
+      </div>
+    <div class="flag" onclick="location.href='en/index.html'">
+        <a href="indexeng.html">
+      <img src="img/uk.jpg" alt="English"></a>
+    </div>
+   
+  </div>
+</body>
+</html>
+
