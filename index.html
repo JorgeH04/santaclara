@@ -26,11 +26,14 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
-    
+
+
+
+
 <style>
-/* Fondo del slider más alto y bien adaptado */
+/* Ajusta la altura del slider */
 .single_slider {
-  min-height: 120vh;
+  min-height: 95vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -39,20 +42,25 @@
   justify-content: center;
 }
 
-/* Ajuste específico para móviles */
+/* En móviles, un poco más largo pero no exagerado */
 @media (max-width: 767px) {
   .single_slider {
-    min-height: 140vh;
+    min-height: 115vh;
   }
 }
 
-/* Fondo general para toda la página */
+/* Fondo general de toda la página */
 body {
   background-image: url('https://res.cloudinary.com/dsk4fft6r/image/upload/v1752180683/WhatsApp_Image_2025-07-01_at_8.36.53_AM_sgzlhk.jpg'); /* poné tu imagen */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
+}
+
+/* Quita fondos blancos que puedan tapar */
+.white-bg {
+  background: transparent !important;
 }
 </style>
  
