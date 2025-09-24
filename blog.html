@@ -25,6 +25,17 @@
 
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+         <style>
+      /* --- Fix para iPhone (Safari iOS) --- */
+      @supports (-webkit-touch-callout: none) {
+        .main_about_wrap {
+          background-attachment: scroll !important;
+          background-size: cover !important;
+          background-position: center !important;
+        }
+      }
+    </style>
 </head>
 
 <body>
@@ -58,14 +69,14 @@
      <!--/ bradcam_area  -->
 
      <div class="main_about_wrap" style="
-  background-image: url('https://res.cloudinary.com/dsk4fft6r/image/upload/v1758212850/WhatsApp_Image_2025-09-18_at_12.48.22_PM_1_o283vw.jpg');
-  background-size: cover;           /* Mantiene la proporción y cubre todo */
-  background-position: center;      /* Centra la imagen */
-  background-repeat: no-repeat;     /* No se repite */
-  min-height: 900px;                /* Asegura que la sección tenga al menos la altura de tu imagen */
-  padding: 50px 0;
-  background-attachment: fixed;     /* Para un efecto parallax si quieres */
-">
+      background-image: url('https://res.cloudinary.com/dsk4fft6r/image/upload/v1758212850/WhatsApp_Image_2025-09-18_at_12.48.22_PM_1_o283vw.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 900px;
+      padding: 50px 0;
+      background-attachment: fixed;   /* Android y escritorio lo mantienen */
+    ">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
