@@ -25,16 +25,49 @@
 
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-         <style>
-      /* --- Fix para iPhone (Safari iOS) --- */
-      @supports (-webkit-touch-callout: none) {
-        .main_about_wrap {
-          background-attachment: scroll !important;
-          background-size: cover !important;
-          background-position: center !important;
-        }
+  <style>
+    /* Contenedor principal: la imagen de fondo será un <img> absoluto */
+    .main_about_wrap {
+      position: relative;
+      overflow: hidden;
+      min-height: 700px;   /* versión de escritorio */
+      padding: 50px 0;
+      /* NO usar background-image aquí */
+    }
+
+    /* Imagen que hace de fondo (compatible iOS) */
+    .main_about_wrap .bg-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;           /* mantiene proporción y "cubre" */
+      object-position: center;     /* ajustá a center/top si necesitás otra área visible */
+      z-index: -1;
+      pointer-events: none;
+      -webkit-transform: translateZ(0); /* ayuda rendimiento/smooth en Safari */
+      transform: translate3d(0,0,0);
+    }
+
+    /* Aseguramos que el contenido quede por encima de la imagen */
+    .main_about_wrap .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Ajustes para móviles (iPhone, Android) */
+    @media (max-width: 768px) {
+      .main_about_wrap {
+        min-height: 60vh;  /* ocupa buena parte de la pantalla en móviles */
+        padding: 30px 0;
       }
-    </style>
+      .main_about_wrap .bg-img {
+        object-position: center top; /* muestra la parte superior en móviles */
+      }
+      /* si las imágenes internas ocupan mucho, podés reducir más el min-height */
+    }
+  </style>
    
 </head>
 
@@ -68,15 +101,14 @@
 
      <!--/ bradcam_area  -->
 
-     <div class="main_about_wrap" style="
-      background-image: url('https://res.cloudinary.com/dsk4fft6r/image/upload/v1758212850/WhatsApp_Image_2025-09-18_at_12.48.22_PM_1_o283vw.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 900px;
-      padding: 50px 0;
-      background-attachment: fixed;   /* Android y escritorio lo mantienen */
-    ">
+     <div class="main_about_wrap">
+
+            <img
+      src="https://res.cloudinary.com/dsk4fft6r/image/upload/v1758212850/WhatsApp_Image_2025-09-18_at_12.48.22_PM_1_o283vw.jpg"
+      alt=""
+      aria-hidden="true"
+      class="bg-img"
+    >
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
