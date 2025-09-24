@@ -25,33 +25,33 @@
 
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-  <style>
-
+<style>
+/* Solución específica para Safari/iPhone */
+@supports (-webkit-touch-callout: none) {
+    .main_about_wrap {
+        background-attachment: scroll !important; /* Fixed no funciona bien en iOS */
+        min-height: 100vh;
+        min-height: -webkit-fill-available; /* Altura disponible real en iOS */
+    }
+}/* Aseguramos que la altura sea consistente en todos los dispositivos */
 .main_about_wrap {
- background-image: url('https://res.cloudinary.com/dsk4fft6r/image/upload/w_800,q_auto,f_jpg/v1758212850/WhatsApp_Image_2025-09-18_at_12.48.22_PM_1_o283vw.jpg');
- background-size: cover;
- background-position: center;
- background-repeat: no-repeat;
- min-height: 100vh; /* Cambiado a 100vh para mejor adaptabilidad */
- padding: 50px 0;
- position: relative; /* Asegura que el contenido se superponga correctamente */
- overflow: hidden; /* Evita desbordamientos */
+    background-image: url('https://res.cloudinary.com/dsk4fft6r/image/upload/v1758212850/WhatsApp_Image_2025-09-18_at_12.48.22_PM_1_o283vw.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-attachment: fixed;
+}/* Media query para dispositivos móviles en general */
+@media (max-width: 768px) {
+    .main_about_wrap {
+        background-attachment: scroll; /* Mejor rendimiento en móviles */
+        min-height: 100vh;
+    }
 }
+</style>
 
-@media only screen and (max-width: 768px) {
- .main_about_wrap {
- min-height: 70vh; /* Altura más pequeña para móviles */
- background-size: cover;
- background-position: center top; /* Ajusta la posición para móviles */
- }
- .about_thumb img {
- width: 100%;
- height: auto;
- object-fit: cover; /* Escala imágenes correctamente */
- max-width: 100%; /* Evita desbordamientos */
- }
-}
-  </style>
+
    
 </head>
 
