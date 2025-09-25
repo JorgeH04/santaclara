@@ -26,27 +26,20 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 <style>
-/* Solución específica para Safari/iPhone */
-@supports (-webkit-touch-callout: none) {
-    .main_about_wrap {
-        background-attachment: scroll !important; /* Fixed no funciona bien en iOS */
-        min-height: 100vh;
-        min-height: -webkit-fill-available; /* Altura disponible real en iOS */
-    }
-}/* Aseguramos que la altura sea consistente en todos los dispositivos */
 .main_about_wrap {
     background-image: url('https://res.cloudinary.com/dsk4fft6r/image/upload/v1758212850/WhatsApp_Image_2025-09-18_at_12.48.22_PM_1_o283vw.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 900px;
     padding: 50px 0;
     background-attachment: fixed;
-}/* Media query para dispositivos móviles en general */
-@media (max-width: 768px) {
+}
+
+/* Para iOS (iPhone/iPad), desactivar fixed */
+@supports (-webkit-touch-callout: none) {
     .main_about_wrap {
-        background-attachment: scroll; /* Mejor rendimiento en móviles */
-        min-height: 100vh;
+        background-attachment: scroll !important;
     }
 }
 </style>
